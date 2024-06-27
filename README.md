@@ -12,6 +12,8 @@ google is a perfect competitor for this kind of job. Still, since we had an acad
 
 this project works with the concept of knowledge graphs and bert-embeddings to find the similarity index. A example of the knowledge graph is uploaded as an html file in the repository
 
+![knowldege](https://github.com/Blackpot-07/LearnPY/assets/104737181/2acefbba-ae9a-47c6-bdf0-d3bcbc67f573)
+
 
 # Note
 
