@@ -1,0 +1,228 @@
+DataFrame has,Syntax,Description:
+Constructor,"DataFrame([data, index, columns, dtype, copy])","Two-dimensional, size-mutable, potentially heterogeneous tabular data."
+Attributes and underlying data,DataFrame.index,The index (row labels) of the DataFrame.
+Attributes and underlying data,DataFrame.columns,The column labels of the DataFrame.
+Attributes and underlying data,DataFrame.dtypes,Return the dtypes in the DataFrame.
+Attributes and underlying data,"DataFrame.info([verbose, buf, max_cols, ...])",Print a concise summary of a DataFrame.
+Attributes and underlying data,"DataFrame.select_dtypes([include, exclude])",Return a subset of the DataFrame's columns based on the column dtypes.
+Attributes and underlying data,DataFrame.values,Return a Numpy representation of the DataFrame.
+Attributes and underlying data,DataFrame.axes,Return a list representing the axes of the DataFrame.
+Attributes and underlying data,DataFrame.ndim,Return an int representing the number of axes / array dimensions.
+Attributes and underlying data,DataFrame.size,Return an int representing the number of elements in this object.
+Attributes and underlying data,DataFrame.shape,Return a tuple representing the dimensionality of the DataFrame.
+Attributes and underlying data,"DataFrame.memory_usage([index, deep])",Return the memory usage of each column in bytes.
+Attributes and underlying data,DataFrame.empty,Indicator whether Series/DataFrame is empty.
+Attributes and underlying data,"DataFrame.set_flags(*[, copy, ...])",Return a new object with updated flags.
+Conversion,"DataFrame.astype(dtype[, copy, errors])",Cast a pandas object to a specified dtype dtype.
+Conversion,"DataFrame.convert_dtypes([infer_objects, ...])",Convert columns to best possible dtypes using dtypes supporting pd.NA.
+Conversion,DataFrame.infer_objects(),Attempt to infer better dtypes for object columns.
+Conversion,DataFrame.copy([deep]),Make a copy of this object's indices and data.
+Conversion,DataFrame.bool(),Return the bool of a single element Series or DataFrame.
+"Indexing, iteration",DataFrame.head([n]),Return the first n rows.
+"Indexing, iteration",DataFrame.at,Access a single value for a row/column label pair.
+"Indexing, iteration",DataFrame.iat,Access a single value for a row/column pair by integer position.
+"Indexing, iteration",DataFrame.loc,Access a group of rows and columns by label(s) or a boolean array.
+"Indexing, iteration",DataFrame.iloc,Purely integer-location based indexing for selection by position.
+"Indexing, iteration","DataFrame.insert(loc, column, value[, ...])",Insert column into DataFrame at specified location.
+"Indexing, iteration",DataFrame.__iter__(),Iterate over info axis.
+"Indexing, iteration",DataFrame.items(),"Iterate over (column name, Series) pairs."
+"Indexing, iteration",DataFrame.iteritems(),"(DEPRECATED) Iterate over (column name, Series) pairs."
+"Indexing, iteration",DataFrame.keys(),Get the 'info axis' (see Indexing for more).
+"Indexing, iteration",DataFrame.iterrows(),"Iterate over DataFrame rows as (index, Series) pairs."
+"Indexing, iteration","DataFrame.itertuples([index, name])",Iterate over DataFrame rows as namedtuples.
+"Indexing, iteration","DataFrame.lookup(row_labels, col_labels)","(DEPRECATED) Label-based ""fancy indexing"" function for DataFrame."
+"Indexing, iteration",DataFrame.pop(item),Return item and drop from frame.
+"Indexing, iteration",DataFrame.tail([n]),Return the last n rows.
+"Indexing, iteration","DataFrame.xs(key[, axis, level, drop_level])",Return cross-section from the Series/DataFrame.
+"Indexing, iteration","DataFrame.get(key[, default])",Get item from object for given key (ex: DataFrame column).
+"Indexing, iteration",DataFrame.isin(values),Whether each element in the DataFrame is contained in values.
+"Indexing, iteration","DataFrame.where(cond[, other, inplace, ...])",Replace values where the condition is False.
+"Indexing, iteration","DataFrame.mask(cond[, other, inplace, axis, ...])",Replace values where the condition is True.
+"Indexing, iteration","DataFrame.query(expr[, inplace])",Query the columns of a DataFrame with a boolean expression.
+Binary operator functions,"DataFrame.add(other[, axis, level, fill_value])","Get Addition of dataframe and other, element-wise (binary operator add)."
+Binary operator functions,"DataFrame.sub(other[, axis, level, fill_value])","Get Subtraction of dataframe and other, element-wise (binary operator sub)."
+Binary operator functions,"DataFrame.mul(other[, axis, level, fill_value])","Get Multiplication of dataframe and other, element-wise (binary operator mul)."
+Binary operator functions,"DataFrame.div(other[, axis, level, fill_value])","Get Floating division of dataframe and other, element-wise (binary operator truediv)."
+Binary operator functions,"DataFrame.truediv(other[, axis, level, ...])","Get Floating division of dataframe and other, element-wise (binary operator truediv)."
+Binary operator functions,"DataFrame.floordiv(other[, axis, level, ...])","Get Integer division of dataframe and other, element-wise (binary operator floordiv)."
+Binary operator functions,"DataFrame.mod(other[, axis, level, fill_value])","Get Modulo of dataframe and other, element-wise (binary operator mod)."
+Binary operator functions,"DataFrame.pow(other[, axis, level, fill_value])","Get Exponential power of dataframe and other, element-wise (binary operator pow)."
+Binary operator functions,DataFrame.dot(other),Compute the matrix multiplication between the DataFrame and other.
+Binary operator functions,"DataFrame.radd(other[, axis, level, fill_value])","Get Addition of dataframe and other, element-wise (binary operator radd)."
+Binary operator functions,"DataFrame.rsub(other[, axis, level, fill_value])","Get Subtraction of dataframe and other, element-wise (binary operator rsub)."
+Binary operator functions,"DataFrame.rmul(other[, axis, level, fill_value])","Get Multiplication of dataframe and other, element-wise (binary operator rmul)."
+Binary operator functions,"DataFrame.rdiv(other[, axis, level, fill_value])","Get Floating division of dataframe and other, element-wise (binary operator rtruediv)."
+Binary operator functions,"DataFrame.rtruediv(other[, axis, level, ...])","Get Floating division of dataframe and other, element-wise (binary operator rtruediv)."
+Binary operator functions,"DataFrame.rfloordiv(other[, axis, level, ...])","Get Integer division of dataframe and other, element-wise (binary operator rfloordiv)."
+Binary operator functions,"DataFrame.rmod(other[, axis, level, fill_value])","Get Modulo of dataframe and other, element-wise (binary operator rmod)."
+Binary operator functions,"DataFrame.rpow(other[, axis, level, fill_value])","Get Exponential power of dataframe and other, element-wise (binary operator rpow)."
+Binary operator functions,"DataFrame.lt(other[, axis, level])","Get Less than of dataframe and other, element-wise (binary operator lt)."
+Binary operator functions,"DataFrame.gt(other[, axis, level])","Get Greater than of dataframe and other, element-wise (binary operator gt)."
+Binary operator functions,"DataFrame.le(other[, axis, level])","Get Less than or equal to of dataframe and other, element-wise (binary operator le)."
+Binary operator functions,"DataFrame.ge(other[, axis, level])","Get Greater than or equal to of dataframe and other, element-wise (binary operator ge)."
+Binary operator functions,"DataFrame.ne(other[, axis, level])","Get Not equal to of dataframe and other, element-wise (binary operator ne)."
+Binary operator functions,"DataFrame.eq(other[, axis, level])","Get Equal to of dataframe and other, element-wise (binary operator eq)."
+Binary operator functions,"DataFrame.combine(other, func[, fill_value, ...])",Perform column-wise combine with another DataFrame.
+Binary operator functions,DataFrame.combine_first(other),Update null elements with value in the same location in other.
+"Function application, GroupBy & window","DataFrame.apply(func[, axis, raw, ...])",Apply a function along an axis of the DataFrame.
+"Function application, GroupBy & window","DataFrame.applymap(func[, na_action])",Apply a function to a Dataframe elementwise.
+"Function application, GroupBy & window","DataFrame.pipe(func, *args, **kwargs)",Apply chainable functions that expect Series or DataFrames.
+"Function application, GroupBy & window","DataFrame.agg([func, axis])",Aggregate using one or more operations over the specified axis.
+"Function application, GroupBy & window","DataFrame.aggregate([func, axis])",Aggregate using one or more operations over the specified axis.
+"Function application, GroupBy & window","DataFrame.transform(func[, axis])",Call func on self producing a DataFrame with the same axis shape as self.
+"Function application, GroupBy & window","DataFrame.groupby([by, axis, level, ...])",Group DataFrame using a mapper or by a Series of columns.
+"Function application, GroupBy & window","DataFrame.rolling(window[, min_periods, ...])",Provide rolling window calculations.
+"Function application, GroupBy & window","DataFrame.expanding([min_periods, center, ...])",Provide expanding window calculations.
+"Function application, GroupBy & window","DataFrame.ewm([com, span, halflife, alpha, ...])",Provide exponentially weighted (EW) calculations.
+Computations / descriptive stats,DataFrame.abs(),Return a Series/DataFrame with absolute numeric value of each element.
+Computations / descriptive stats,"DataFrame.all([axis, bool_only, skipna, level])","Return whether all elements are True, potentially over an axis."
+Computations / descriptive stats,"DataFrame.any([axis, bool_only, skipna, level])","Return whether any element is True, potentially over an axis."
+Computations / descriptive stats,"DataFrame.clip([lower, upper, axis, inplace])",Trim values at input threshold(s).
+Computations / descriptive stats,"DataFrame.corr([method, min_periods, ...])","Compute pairwise correlation of columns, excluding NA/null values."
+Computations / descriptive stats,"DataFrame.corrwith(other[, axis, drop, ...])",Compute pairwise correlation.
+Computations / descriptive stats,"DataFrame.count([axis, level, numeric_only])",Count non-NA cells for each column or row.
+Computations / descriptive stats,"DataFrame.cov([min_periods, ddof, numeric_only])","Compute pairwise covariance of columns, excluding NA/null values."
+Computations / descriptive stats,"DataFrame.cummax([axis, skipna])",Return cumulative maximum over a DataFrame or Series axis.
+Computations / descriptive stats,"DataFrame.cummin([axis, skipna])",Return cumulative minimum over a DataFrame or Series axis.
+Computations / descriptive stats,"DataFrame.cumprod([axis, skipna])",Return cumulative product over a DataFrame or Series axis.
+Computations / descriptive stats,"DataFrame.cumsum([axis, skipna])",Return cumulative sum over a DataFrame or Series axis.
+Computations / descriptive stats,"DataFrame.describe([percentiles, include, ...])",Generate descriptive statistics.
+Computations / descriptive stats,"DataFrame.diff([periods, axis])",First discrete difference of element.
+Computations / descriptive stats,"DataFrame.eval(expr[, inplace])",Evaluate a string describing operations on DataFrame columns.
+Computations / descriptive stats,"DataFrame.kurt([axis, skipna, level, ...])",Return unbiased kurtosis over requested axis.
+Computations / descriptive stats,"DataFrame.kurtosis([axis, skipna, level, ...])",Return unbiased kurtosis over requested axis.
+Computations / descriptive stats,"DataFrame.mad([axis, skipna, level])",(DEPRECATED) Return the mean absolute deviation of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.max([axis, skipna, level, ...])",Return the maximum of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.mean([axis, skipna, level, ...])",Return the mean of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.median([axis, skipna, level, ...])",Return the median of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.min([axis, skipna, level, ...])",Return the minimum of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.mode([axis, numeric_only, dropna])",Get the mode(s) of each element along the selected axis.
+Computations / descriptive stats,"DataFrame.pct_change([periods, fill_method, ...])",Percentage change between the current and a prior element.
+Computations / descriptive stats,"DataFrame.prod([axis, skipna, level, ...])",Return the product of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.product([axis, skipna, level, ...])",Return the product of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.quantile([q, axis, numeric_only, ...])",Return values at the given quantile over requested axis.
+Computations / descriptive stats,"DataFrame.rank([axis, method, numeric_only, ...])",Compute numerical data ranks (1 through n) along axis.
+Computations / descriptive stats,DataFrame.round([decimals]),Round a DataFrame to a variable number of decimal places.
+Computations / descriptive stats,"DataFrame.sem([axis, skipna, level, ddof, ...])",Return unbiased standard error of the mean over requested axis.
+Computations / descriptive stats,"DataFrame.skew([axis, skipna, level, ...])",Return unbiased skew over requested axis.
+Computations / descriptive stats,"DataFrame.sum([axis, skipna, level, ...])",Return the sum of the values over the requested axis.
+Computations / descriptive stats,"DataFrame.std([axis, skipna, level, ddof, ...])",Return sample standard deviation over requested axis.
+Computations / descriptive stats,"DataFrame.var([axis, skipna, level, ddof, ...])",Return unbiased variance over requested axis.
+Computations / descriptive stats,"DataFrame.nunique([axis, dropna])",Count number of distinct elements in specified axis.
+Computations / descriptive stats,"DataFrame.value_counts([subset, normalize, ...])",Return a Series containing counts of unique rows in the DataFrame.
+Reindexing / selection / label manipulation,DataFrame.add_prefix(prefix),Prefix labels with string prefix.
+Reindexing / selection / label manipulation,DataFrame.add_suffix(suffix),Suffix labels with string suffix.
+Reindexing / selection / label manipulation,"DataFrame.align(other[, join, axis, level, ...])",Align two objects on their axes with the specified join method.
+Reindexing / selection / label manipulation,"DataFrame.at_time(time[, asof, axis])","Select values at particular time of day (e.g., 9:30AM)."
+Reindexing / selection / label manipulation,"DataFrame.between_time(start_time, end_time)","Select values between particular times of the day (e.g., 9:00-9:30 AM)."
+Reindexing / selection / label manipulation,"DataFrame.drop([labels, axis, index, ...])",Drop specified labels from rows or columns.
+Reindexing / selection / label manipulation,"DataFrame.drop_duplicates([subset, keep, ...])",Return DataFrame with duplicate rows removed.
+Reindexing / selection / label manipulation,"DataFrame.duplicated([subset, keep])",Return boolean Series denoting duplicate rows.
+Reindexing / selection / label manipulation,DataFrame.equals(other),Test whether two objects contain the same elements.
+Reindexing / selection / label manipulation,"DataFrame.filter([items, like, regex, axis])",Subset the dataframe rows or columns according to the specified index labels.
+Reindexing / selection / label manipulation,DataFrame.first(offset),Select initial periods of time series data based on a date offset.
+Reindexing / selection / label manipulation,DataFrame.head([n]),Return the first n rows.
+Reindexing / selection / label manipulation,"DataFrame.idxmax([axis, skipna, numeric_only])",Return index of first occurrence of maximum over requested axis.
+Reindexing / selection / label manipulation,"DataFrame.idxmin([axis, skipna, numeric_only])",Return index of first occurrence of minimum over requested axis.
+Reindexing / selection / label manipulation,DataFrame.last(offset),Select final periods of time series data based on a date offset.
+Reindexing / selection / label manipulation,"DataFrame.reindex([labels, index, columns, ...])",Conform Series/DataFrame to new index with optional filling logic.
+Reindexing / selection / label manipulation,"DataFrame.reindex_like(other[, method, ...])",Return an object with matching indices as other object.
+Reindexing / selection / label manipulation,"DataFrame.rename([mapper, index, columns, ...])",Alter axes labels.
+Reindexing / selection / label manipulation,"DataFrame.rename_axis([mapper, index, ...])",Set the name of the axis for the index or columns.
+Reindexing / selection / label manipulation,"DataFrame.reset_index([level, drop, ...])","Reset the index, or a level of it."
+Reindexing / selection / label manipulation,"DataFrame.sample([n, frac, replace, ...])",Return a random sample of items from an axis of object.
+Reindexing / selection / label manipulation,"DataFrame.set_axis(labels[, axis, inplace, copy])",Assign desired index to given axis.
+Reindexing / selection / label manipulation,"DataFrame.set_index(keys[, drop, append, ...])",Set the DataFrame index using existing columns.
+Reindexing / selection / label manipulation,DataFrame.tail([n]),Return the last n rows.
+Reindexing / selection / label manipulation,"DataFrame.take(indices[, axis, is_copy])",Return the elements in the given positional indices along an axis.
+Reindexing / selection / label manipulation,"DataFrame.truncate([before, after, axis, copy])",Truncate a Series or DataFrame before and after some index value.
+Missing data handling,"DataFrame.backfill([axis, inplace, limit, ...])",Synonym for DataFrame.fillna() with method='bfill'.
+Missing data handling,"DataFrame.bfill([axis, inplace, limit, downcast])",Synonym for DataFrame.fillna() with method='bfill'.
+Missing data handling,"DataFrame.dropna([axis, how, thresh, ...])",Remove missing values.
+Missing data handling,"DataFrame.ffill([axis, inplace, limit, downcast])",Synonym for DataFrame.fillna() with method='ffill'.
+Missing data handling,"DataFrame.fillna([value, method, axis, ...])",Fill NA/NaN values using the specified method.
+Missing data handling,"DataFrame.interpolate([method, axis, limit, ...])",Fill NaN values using an interpolation method.
+Missing data handling,DataFrame.isna(),Detect missing values.
+Missing data handling,DataFrame.isnull(),DataFrame.isnull is an alias for DataFrame.isna.
+Missing data handling,DataFrame.notna(),Detect existing (non-missing) values.
+Missing data handling,DataFrame.notnull(),DataFrame.notnull is an alias for DataFrame.notna.
+Missing data handling,"DataFrame.pad([axis, inplace, limit, downcast])",Synonym for DataFrame.fillna() with method='ffill'.
+Missing data handling,"DataFrame.replace([to_replace, value, ...])",Replace values given in to_replace with value.
+"Reshaping, sorting, transposing","DataFrame.droplevel(level[, axis])",Return Series/DataFrame with requested index / column level(s) removed.
+"Reshaping, sorting, transposing","DataFrame.pivot([index, columns, values])",Return reshaped DataFrame organized by given index / column values.
+"Reshaping, sorting, transposing","DataFrame.pivot_table([values, index, ...])",Create a spreadsheet-style pivot table as a DataFrame.
+"Reshaping, sorting, transposing","DataFrame.reorder_levels(order[, axis])",Rearrange index levels using input order.
+"Reshaping, sorting, transposing","DataFrame.sort_values(by[, axis, ascending, ...])",Sort by the values along either axis.
+"Reshaping, sorting, transposing","DataFrame.sort_index([axis, level, ...])",Sort object by labels (along an axis).
+"Reshaping, sorting, transposing","DataFrame.nlargest(n, columns[, keep])",Return the first n rows ordered by columns in descending order.
+"Reshaping, sorting, transposing","DataFrame.nsmallest(n, columns[, keep])",Return the first n rows ordered by columns in ascending order.
+"Reshaping, sorting, transposing","DataFrame.swaplevel([i, j, axis])",Swap levels i and j in a MultiIndex.
+"Reshaping, sorting, transposing","DataFrame.stack([level, dropna])",Stack the prescribed level(s) from columns to index.
+"Reshaping, sorting, transposing","DataFrame.unstack([level, fill_value])",Pivot a level of the (necessarily hierarchical) index labels.
+"Reshaping, sorting, transposing","DataFrame.swapaxes(axis1, axis2[, copy])",Interchange axes and swap values axes appropriately.
+"Reshaping, sorting, transposing","DataFrame.melt([id_vars, value_vars, ...])","Unpivot a DataFrame from wide to long format, optionally leaving identifiers set."
+"Reshaping, sorting, transposing","DataFrame.explode(column[, ignore_index])","Transform each element of a list-like to a row, replicating index values."
+"Reshaping, sorting, transposing",DataFrame.squeeze([axis]),Squeeze 1 dimensional axis objects into scalars.
+"Reshaping, sorting, transposing",DataFrame.to_xarray(),Return an xarray object from the pandas object.
+"Reshaping, sorting, transposing",DataFrame.T,"DataFrame.transpose(*args[, copy])"
+Combining / comparing / joining / merging,"DataFrame.append(other[, ignore_index, ...])","(DEPRECATED) Append rows of other to the end of caller, returning a new object."
+Combining / comparing / joining / merging,DataFrame.assign(**kwargs),Assign new columns to a DataFrame.
+Combining / comparing / joining / merging,"DataFrame.compare(other[, align_axis, ...])",Compare to another DataFrame and show the differences.
+Combining / comparing / joining / merging,"DataFrame.join(other[, on, how, lsuffix, ...])",Join columns of another DataFrame.
+Combining / comparing / joining / merging,"DataFrame.merge(right[, how, on, left_on, ...])",Merge DataFrame or named Series objects with a database-style join.
+Combining / comparing / joining / merging,"DataFrame.update(other[, join, overwrite, ...])",Modify in place using non-NA values from another DataFrame.
+Time Series-related,"DataFrame.asfreq(freq[, method, how, ...])",Convert time series to specified frequency.
+Time Series-related,"DataFrame.asof(where[, subset])",Return the last row(s) without any NaNs before where.
+Time Series-related,"DataFrame.shift([periods, freq, axis, ...])",Shift index by desired number of periods with an optional time freq.
+Time Series-related,"DataFrame.slice_shift([periods, axis])",(DEPRECATED) Equivalent to shift without copying data.
+Time Series-related,"DataFrame.tshift([periods, freq, axis])","(DEPRECATED) Shift the time index, using the index's frequency if available."
+Time Series-related,DataFrame.first_valid_index(),"Return index for first non-NA value or None, if no non-NA value is found."
+Time Series-related,DataFrame.last_valid_index(),"Return index for last non-NA value or None, if no non-NA value is found."
+Time Series-related,"DataFrame.resample(rule[, axis, closed, ...])",Resample time-series data.
+Time Series-related,"DataFrame.to_period([freq, axis, copy])",Convert DataFrame from DatetimeIndex to PeriodIndex.
+Time Series-related,"DataFrame.to_timestamp([freq, how, axis, copy])","Cast to DatetimeIndex of timestamps, at beginning of period."
+Time Series-related,"DataFrame.tz_convert(tz[, axis, level, copy])",Convert tz-aware axis to target time zone.
+Time Series-related,"DataFrame.tz_localize(tz[, axis, level, ...])",Localize tz-naive index of a Series or DataFrame to target time zone.
+Flags,"Flags refer to attributes of the pandas object. Properties of the dataset (like the date is was recorded, the URL it was accessed from, etc.) should be stored in DataFrame.attrs.","Flags(obj, *, allows_duplicate_labels)"
+Metadata,DataFrame.attrs is a dictionary for storing global metadata for this DataFrame.,Warning
+Metadata,DataFrame.attrs is considered experimental and may change without warning.,DataFrame.attrs
+Plotting,DataFrame.plot is both a callable method and a namespace attribute for specific plotting methods of the form DataFrame.plot.<kind>.,"DataFrame.plot([x, y, kind, ax, ....])"
+Plotting,DataFrame plotting accessor and method,"DataFrame.plot.area([x, y])"
+Plotting,Draw a stacked area plot.,"DataFrame.plot.bar([x, y])"
+Plotting,Vertical bar plot.,"DataFrame.plot.barh([x, y])"
+Plotting,Make a horizontal bar plot.,DataFrame.plot.box([by])
+Plotting,Make a box plot of the DataFrame columns.,"DataFrame.plot.density([bw_method, ind])"
+Plotting,Generate Kernel Density Estimate plot using Gaussian kernels.,"DataFrame.plot.hexbin(x, y[, C, ...])"
+Plotting,Generate a hexagonal binning plot.,"DataFrame.plot.hist([by, bins])"
+Plotting,Draw one histogram of the DataFrame's columns.,"DataFrame.plot.kde([bw_method, ind])"
+Plotting,Generate Kernel Density Estimate plot using Gaussian kernels.,"DataFrame.plot.line([x, y])"
+Plotting,Plot Series or DataFrame as lines.,DataFrame.plot.pie(**kwargs)
+Plotting,Generate a pie plot.,"DataFrame.plot.scatter(x, y[, s, c])"
+Plotting,Create a scatter plot with varying marker point size and color.,"DataFrame.boxplot([column, by, ax, ...])"
+Plotting,Make a box plot from DataFrame columns.,"DataFrame.hist([column, by, grid, ...])"
+Sparse accessor,Sparse-dtype specific methods and attributes are provided under the DataFrame.sparse accessor.,DataFrame.sparse.density
+Sparse accessor,Ratio of non-sparse points to total (dense) data points.,"DataFrame.sparse.from_spmatrix(data[, ...])"
+Sparse accessor,Create a new DataFrame from a scipy sparse matrix.,DataFrame.sparse.to_coo()
+Sparse accessor,Return the contents of the frame as a sparse SciPy COO matrix.,DataFrame.sparse.to_dense()
+Serialization / IO / conversion,"DataFrame.from_dict(data[, orient, dtype, ...])",Construct DataFrame from dict of array-like or dicts.
+Serialization / IO / conversion,"DataFrame.from_records(data[, index, ...])",Convert structured or record ndarray to DataFrame.
+Serialization / IO / conversion,"DataFrame.to_orc([path, engine, index, ...])",Write a DataFrame to the ORC format.
+Serialization / IO / conversion,"DataFrame.to_parquet([path, engine, ...])",Write a DataFrame to the binary parquet format.
+Serialization / IO / conversion,"DataFrame.to_pickle(path[, compression, ...])",Pickle (serialize) object to file.
+Serialization / IO / conversion,"DataFrame.to_csv([path_or_buf, sep, na_rep, ...])",Write object to a comma-separated values (csv) file.
+Serialization / IO / conversion,"DataFrame.to_hdf(path_or_buf, key[, mode, ...])",Write the contained data to an HDF5 file using HDFStore.
+Serialization / IO / conversion,"DataFrame.to_sql(name, con[, schema, ...])",Write records stored in a DataFrame to a SQL database.
+Serialization / IO / conversion,"DataFrame.to_dict([orient, into])",Convert the DataFrame to a dictionary.
+Serialization / IO / conversion,"DataFrame.to_excel(excel_writer[, ...])",Write object to an Excel sheet.
+Serialization / IO / conversion,"DataFrame.to_json([path_or_buf, orient, ...])",Convert the object to a JSON string.
+Serialization / IO / conversion,"DataFrame.to_html([buf, columns, col_space, ...])",Render a DataFrame as an HTML table.
+Serialization / IO / conversion,"DataFrame.to_feather(path, **kwargs)",Write a DataFrame to the binary Feather format.
+Serialization / IO / conversion,"DataFrame.to_latex([buf, columns, ...])","Render object to a LaTeX tabular, longtable, or nested table."
+Serialization / IO / conversion,"DataFrame.to_stata(path[, convert_dates, ...])",Export DataFrame object to Stata dta format.
+Serialization / IO / conversion,"DataFrame.to_gbq(destination_table[, ...])",Write a DataFrame to a Google BigQuery table.
+Serialization / IO / conversion,"DataFrame.to_records([index, column_dtypes, ...])",Convert DataFrame to a NumPy record array.
+Serialization / IO / conversion,"DataFrame.to_string([buf, columns, ...])",Render a DataFrame to a console-friendly tabular output.
+Serialization / IO / conversion,"DataFrame.to_clipboard([excel, sep])",Copy object to the system clipboard.
+Serialization / IO / conversion,"DataFrame.to_markdown([buf, mode, index, ...])",Print DataFrame in Markdown-friendly format.
+Serialization / IO / conversion,DataFrame.style,Returns a Styler object.
+Serialization / IO / conversion,"DataFrame.__dataframe__([nan_as_null, ...])",Return the dataframe interchange object implementing the interchange protocol.

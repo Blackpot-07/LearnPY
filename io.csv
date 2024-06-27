@@ -1,0 +1,54 @@
+,DataFrame has,Syntax,Description:
+0,Pickling,"read_pickle(filepath_or_buffer[, ...])",Load pickled pandas object (or any object) from file.
+1,Pickling,"DataFrame.to_pickle(path[, compression, ...])",Pickle (serialize) object to file.
+0,Flat file,"read_table(filepath_or_buffer[, sep, ...])",Read general delimited file into DataFrame.
+1,Flat file,"read_csv(filepath_or_buffer[, sep, ...])",Read a comma-separated values (csv) file into DataFrame.
+2,Flat file,"DataFrame.to_csv([path_or_buf, sep, na_rep, ...])",Write object to a comma-separated values (csv) file.
+3,Flat file,"read_fwf(filepath_or_buffer[, colspecs, ...])",Read a table of fixed-width formatted lines into DataFrame.
+0,Clipboard,read_clipboard([sep]),Read text from clipboard and pass to read_csv.
+1,Clipboard,"DataFrame.to_clipboard([excel, sep])",Copy object to the system clipboard.
+0,Excel,"read_excel(io[, sheet_name, header, names, ...])",Read an Excel file into a pandas DataFrame.
+1,Excel,"DataFrame.to_excel(excel_writer[, ...])",Write object to an Excel sheet.
+2,Excel,"ExcelFile.parse([sheet_name, header, names, ...])",Parse specified sheet(s) into a DataFrame.
+3,Excel,"Styler.to_excel(excel_writer[, sheet_name, ...])",Write Styler to an Excel sheet.
+4,Excel,"ExcelWriter(path[, engine, date_format, ...])",Class for writing DataFrame objects into excel sheets.
+0,JSON,"read_json(path_or_buf[, orient, typ, dtype, ...])",Convert a JSON string to pandas object.
+1,JSON,"json_normalize(data[, record_path, meta, ...])",Normalize semi-structured JSON data into a flat table.
+2,JSON,"DataFrame.to_json([path_or_buf, orient, ...])",Convert the object to a JSON string.
+3,JSON,"build_table_schema(data[, index, ...])",Create a Table schema from data.
+0,HTML,"read_html(io[, match, flavor, header, ...])",Read HTML tables into a list of DataFrame objects.
+1,HTML,"DataFrame.to_html([buf, columns, col_space, ...])",Render a DataFrame as an HTML table.
+2,HTML,"Styler.to_html([buf, table_uuid, ...])","Write Styler to a file, buffer or string in HTML-CSS format."
+0,XML,"read_xml(path_or_buffer[, xpath, ...])",Read XML document into a DataFrame object.
+1,XML,"DataFrame.to_xml([path_or_buffer, index, ...])",Render a DataFrame to an XML document.
+0,Latex,"DataFrame.to_latex([buf, columns, ...])","Render object to a LaTeX tabular, longtable, or nested table."
+1,Latex,"Styler.to_latex([buf, column_format, ...])","Write Styler to a file, buffer or string in LaTeX format."
+0,HDFStore: PyTables (HDF5),"read_hdf(path_or_buf[, key, mode, errors, ...])","Read from the store, close it if we opened it."
+1,HDFStore: PyTables (HDF5),"HDFStore.put(key, value[, format, index, ...])",Store object in HDFStore.
+2,HDFStore: PyTables (HDF5),"HDFStore.append(key, value[, format, axes, ...])",Append to Table in file.
+3,HDFStore: PyTables (HDF5),HDFStore.get(key),Retrieve pandas object stored in file.
+4,HDFStore: PyTables (HDF5),"HDFStore.select(key[, where, start, stop, ...])","Retrieve pandas object stored in file, optionally based on where criteria."
+5,HDFStore: PyTables (HDF5),HDFStore.info(),Print detailed information on the store.
+6,HDFStore: PyTables (HDF5),HDFStore.keys([include]),Return a list of keys corresponding to objects stored in HDFStore.
+7,HDFStore: PyTables (HDF5),HDFStore.groups(),Return a list of all the top-level nodes.
+8,HDFStore: PyTables (HDF5),HDFStore.walk([where]),Walk the pytables group hierarchy for pandas objects.
+9,HDFStore: PyTables (HDF5),Warning,"One can store a subclass of DataFrame or Series to HDF5, but the type of the subclass is lost upon storing."
+0,Feather,"read_feather(path[, columns, use_threads, ...])",Load a feather-format object from the file path.
+1,Feather,"DataFrame.to_feather(path, **kwargs)",Write a DataFrame to the binary Feather format.
+0,Parquet,"read_parquet(path[, engine, columns, ...])","Load a parquet object from the file path, returning a DataFrame."
+1,Parquet,"DataFrame.to_parquet([path, engine, ...])",Write a DataFrame to the binary parquet format.
+0,ORC,"read_orc(path[, columns])","Load an ORC object from the file path, returning a DataFrame."
+1,ORC,"DataFrame.to_orc([path, engine, index, ...])",Write a DataFrame to the ORC format.
+0,SAS,"read_sas(filepath_or_buffer[, format, ...])",Read SAS files stored as either XPORT or SAS7BDAT format files.
+0,SPSS,"read_spss(path[, usecols, convert_categoricals])","Load an SPSS file from the file path, returning a DataFrame."
+0,SQL,"read_sql_table(table_name, con[, schema, ...])",Read SQL database table into a DataFrame.
+1,SQL,"read_sql_query(sql, con[, index_col, ...])",Read SQL query into a DataFrame.
+2,SQL,"read_sql(sql, con[, index_col, ...])",Read SQL query or database table into a DataFrame.
+3,SQL,"DataFrame.to_sql(name, con[, schema, ...])",Write records stored in a DataFrame to a SQL database.
+0,Google BigQuery,"read_gbq(query[, project_id, index_col, ...])",Load data from Google BigQuery.
+0,STATA,"read_stata(filepath_or_buffer[, ...])",Read Stata file into DataFrame.
+1,STATA,"DataFrame.to_stata(path[, convert_dates, ...])",Export DataFrame object to Stata dta format.
+2,STATA,StataReader.data_label,Return data label of Stata file.
+3,STATA,StataReader.value_labels(),Return a nested dict associating each variable name to its value and label.
+4,STATA,StataReader.variable_labels(),Return a dict associating each variable name with corresponding label.
+5,STATA,StataWriter.write_file(),Export DataFrame object to Stata dta format.

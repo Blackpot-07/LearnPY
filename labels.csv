@@ -1,0 +1,517 @@
+0
+convert to another timezone
+smallest group of elements
+subtract to series
+series flags
+lenght of strings
+random sample
+sparse
+memory usage
+duplicates
+localize to timezone
+get year
+timedelta array
+capitalize
+elements of column to a row
+get milisecond
+position of minimum value
+map values of series
+kurtosis
+find aggregate
+read json
+get group by index
+floor division
+top rows
+read excel
+read hdf
+change datatype
+series to dataframe
+sort by label
+one boxplot per column
+empty
+write json
+group according to a function
+size of data
+number of days in month
+set categories
+initial time series
+pad string 
+get cross section
+normalize string
+interchange object implementing the interchange protocol
+get microsecond
+call function on dataframe
+get day
+lesser than equal to series
+drop levels
+calculate date according to ISO
+rearrange index
+replace
+to timestamps
+fill null according to other series
+read feather
+apply expanding windows
+write to csv
+reset index
+detailed summary
+conver to JSON
+set index from column
+select datatypes
+get first value
+time objects
+cummulative minimum
+get day of week
+cummulative maximum
+ndarray to dataframe
+string
+get transpose
+find best possible datatype
+check if end of quarter
+aggregate series
+standard error
+maximum over asix
+index to axis
+all true values
+convert to list
+back fill
+index information
+return crosss section
+write csv
+apply chanable function
+count of unique values
+wrap string
+deprecated shift the time in elements
+convert to array
+handling of
+data ranks
+array of nonfill values
+group by
+check null
+sort
+turnicate series
+pie plot
+integer division of dataframes
+to by periods
+join
+read stata
+vertical box plot
+iterate rows
+evaluate string describing operation
+variance by axis
+update
+check if alphabetic
+top first rows
+allow duplicates or not
+greater than equal to operation
+mod of series
+hdfs information
+dimention
+series set flags
+check not null
+correlation with other 
+ceil by frequency
+get first rows
+lablel of minimum value
+one histogram per column
+write hdfs
+unique column values
+ sparse scipy coo matrix
+index locator
+dataframe to stata dta
+apply function element wise
+largest group of elements
+warning
+markdown format
+all elements are true
+unbiased kurtosis
+count of non nulls
+equal series
+read clipboard
+ffill
+change to best datatype
+find element by row and column
+flattened array
+df from dictionary
+end time series
+first occurence index max
+add to series
+axes labels
+apply chainable functions
+sum by axis
+write html
+equal or not
+variance
+merge series
+maximum over axis
+get index
+read fixed width table
+any true value
+check if wjhitespaces
+fill with previous value
+iterator
+find better datatype
+kurtosis by axis
+values betwwen time
+compare in values
+mean absolute deviation
+insert sorted
+read csv
+fill with next value
+Suffix labels
+reorder categories
+conver to latex
+final elements of timeseries
+swap level
+markdown friendly format
+find nulls
+perform exponentially weighted calculations
+series name
+date time
+drop duplicates
+change style
+label of maximum value
+cummulative product
+get hour
+reindex like other
+duration in seconds
+not equal to operation
+hexagonal bin plot
+get last rows without nulls
+subset dataframe
+rename axis
+find if not null
+area plot
+read spss
+get week
+increasing values
+remove duplicates
+handle null
+monotonic 
+sparse density
+find duplicates
+write to pickle
+pivot table
+remove category
+iterate each value
+write clipboard
+fill with value
+find missing values
+cast to array
+check if pattern
+read sql
+find values
+datetime properties
+decreasing values
+Prefix labels
+set unordered
+horizontal bar plot
+read sql query
+kernal density lot
+write latex
+swap axis
+data summary
+slice shift 
+drop missing values
+get locale day names
+hdfs keys
+kde plot
+squeeze
+decimal nonfill value points 
+check ordered relation
+element by index
+read pickle
+expanding widow calculation
+last rows
+write to HDF5
+translate according to table
+date to period index
+find absolute values
+greater than equal to series
+convert to timestamp
+select values between particular in elements
+slice and replace
+to array
+absolute of seroes
+get dpecific column
+subtract dataframes
+convert to lower
+duplicate string
+horizontal box plot
+mode of series
+discrete difference
+dot product
+new view
+date time array objects
+get second
+line plot
+not equal series
+equal elements
+fillvalue
+query columns
+less than equal to operation 
+correlation
+merge series 
+read table
+pad string
+cut off
+scatter plot
+sum over axis
+histogram
+pickle serealize object
+sort by axis
+get by key
+split by seperator
+locatea cell by index
+get best datatype
+minimum over axis
+period end time
+set ordered
+read parquet
+n smallest
+convert to index 
+find all patterns
+sort by index
+check true condition
+read html
+lesser than series
+get day of year
+chec if leap year
+check if start of month
+rename categories
+dummy
+last non null
+multiply dataframes
+stata file label
+replace according to pattern
+percentage change in elements
+n largest
+return between a range 
+attributes
+filter
+find null
+read google big query
+memory used
+align
+element nanoseconds
+caluclate autocoreelation
+round by frequency
+write stata
+check if digits
+get codes
+convert to midnight time
+get column names
+convert to dataframe
+pad with 0
+copy of dataframe
+count not null
+mean standard error
+encode
+get element
+median over axis
+skewness
+round off
+assign new column
+covariance of column
+read orc
+shape of data
+rename column
+mode over axis
+unstack
+join column of different dataframe
+standard deviation over axis
+time objects with timezone
+floor by frequency
+casefold
+less than operation 
+apply a window on series
+mean over axis
+suffix
+greater than series
+remove suffix
+select values at in elements
+write stata format
+tz_convertste-
+write hdf
+greater than operation
+product by axis
+convert to period
+get quarter of date
+retrieve hdfs
+extract capture groups in in elements
+write sql
+write xml
+frequency object
+string by to_strip])
+append hdfs
+element seconds
+quatile over axis
+one row true or not
+iterate dataframe
+difference of values
+unique elements over axis
+metadata
+repeat values
+check if lowercase
+lowest index
+initial elements of timeseries
+find number of values
+get by index
+number of unique values
+append
+copy data
+resample time series data
+density plot
+change axis label
+values at specific time
+coo matrix
+un pivot
+delete column and store
+reindex
+slice string
+print last element 
+target time zone
+iterate columns
+covert as frequency
+dot product of series
+unique values
+remove unused categories
+get by row column
+shift index time series
+percentage change
+convert to upper
+element days
+find datatypes
+sort by values
+get month
+drop row or column
+check false condition
+first occurence index min
+dataframe to tabular 
+find bytes
+write dictionary
+stack
+plot a series
+read xml
+dataframe to numpy array
+read sas
+parse sheets
+trim values
+write to excel
+transpose
+vertical bar plot
+drop values
+get categories
+add category
+merge
+shift by time
+reshape dataframe
+check if end of year
+interpolation
+rolling window calculation
+iterate each row as tuple
+cummulative sum
+decode
+take power in series
+filter dataframe
+find rows and columns
+remove null
+get rank
+prefix
+convert to dictionary
+convert to frequency
+empty or not
+covariance with other
+convert to string
+swapcase
+any element is true
+swap in elements
+equal to values
+update values
+get last rows
+write feather
+build table schema
+conditional locator
+highest index
+remove value
+write to sql
+get locale month names
+remove leading characters
+write pickle
+find not null
+components of time deltas
+column label
+write binary parquet format
+statistics of series
+visualize
+categorical
+union of two series
+combine dataframes
+position of maximum value
+convert to categorical
+get minute
+write orc
+multiply to series
+add dataframes
+insert column
+apply function on series elements
+check if alphanumeric
+skew 
+extract patterns
+equal to operation
+reindex as other
+check if start of year
+fijnd dimension
+constructor
+exponential power of dataframe
+copy to clipboard
+period start time
+standard deviation
+convert to scalar
+locate a cell
+check if start of quarter
+check if decimal
+create new df from a scipy sparse matrix
+data frame to google big query table gbq
+replace value
+product over axis
+get timezone
+date objects
+dataframe to numpy
+nonfll value points
+rename labels
+values by index
+apply function axis wise
+check if uppercase
+normalize json
+titlecase
+weighted calculations
+remove and return row or col
+count patterns
+divide to series
+check if end of month
+check if numeric
+write parquet
+merge string
+check if titlecase
+get quantile
+non sparse point ratio
+join 
+get week of year
+write excel
+hdfs nodes
+pair wise correlation
+fill with regression
+first valid index
+last valid index
+convert to numpy
+to a index
+box plot
+divide dataframes
+iterate column names
+compare
+element microseconds
+check pattern
+forward fill
+write binary
+remove prefix
+modulus of dataframes
